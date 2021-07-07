@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SoruActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Başlık :"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/favTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favorilere Ekle :"
+                    android:textSize="16dp"
+                    android:layout_toLeftOf="@id/imageFav"
+                    android:layout_margin="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/imageFav"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/fav_icon_bos"
+                    android:padding="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="4dp"
+                    android:background="#00454545"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editBaslik1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="baslik"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:background="#00FFFFFF"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru :"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/editSoru1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="soru"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:background="#00FFFFFF"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cevap : "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/editCevap1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="cevap"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:maxLength="15"
+                android:background="#00FFFFFF"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

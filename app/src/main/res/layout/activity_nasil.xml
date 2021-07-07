@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NasilActivity"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aciklama1"
+        android:textColor="#373737"
+        android:textSize="18sp"
+        android:text="aciklama"
+        android:layout_margin="3dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aciklama2"
+        android:textColor="#373737"
+        android:textSize="18sp"
+        android:text="aciklama"
+        android:layout_margin="3dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aciklama3"
+        android:textColor="#373737"
+        android:textSize="18sp"
+        android:text="aciklama"
+        android:layout_margin="3dp"/>
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aciklama4"
+        android:textColor="#373737"
+        android:textSize="18sp"
+        android:text="aciklama"
+        android:layout_margin="3dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

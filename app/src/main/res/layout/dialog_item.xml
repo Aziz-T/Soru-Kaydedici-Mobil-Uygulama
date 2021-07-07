@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yeniOlustur"
+        android:text="+"
+        android:textColor="#000"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp"
+        android:textSize="20dp"
+        android:gravity="left|center_vertical"
+        android:layout_margin="4dp"
+        android:background="#00FFFFFF"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/klasorRec"/>
+
+
+</LinearLayout>

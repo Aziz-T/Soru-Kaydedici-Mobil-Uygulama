@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Klasör Ekle:"
+        android:textColor="#000"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp"
+        android:textSize="20dp"
+        android:gravity="left|center_vertical"
+        android:layout_margin="4dp"
+        android:background="#00FFFFFF"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/olusturEdit"
+        android:layout_below="@id/tx"
+        android:hint="klasör adı yazınız"
+        android:textColor="#000"
+        android:layout_margin="4dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iptalButon"
+        android:text="İptal"
+        android:layout_below="@id/olusturEdit"
+        android:background="#fff"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok_button"
+        android:text="Tamam"
+        android:layout_below="@id/olusturEdit"
+        android:layout_alignParentRight="true"
+        android:background="#fff"
+        />
+
+
+</RelativeLayout>

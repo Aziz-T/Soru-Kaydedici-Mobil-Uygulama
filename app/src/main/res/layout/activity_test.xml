@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lineer" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/soruText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="soru"
+        android:padding="7dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@drawable/soru_txt_back"
+        android:textColor="#000"
+        android:textSize="15dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/lineer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/ileriButon"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="buton1"
+            android:id="@+id/buton1"
+            android:background="@drawable/buton_back_iki"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/buton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="buton2"
+            android:layout_margin="5dp"
+            android:background="@drawable/buton_back_iki"
+            />
+
+        <Button
+            android:id="@+id/buton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buton_back_iki"
+            android:text="buton3"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/buton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="buton4"
+            android:layout_margin="5dp"
+            android:background="@drawable/buton_back_iki"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/ileriButon"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="İLERİ"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/buton_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/temaRengi"
+        />
+</RelativeLayout>
